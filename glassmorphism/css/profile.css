@@ -1,0 +1,53 @@
+.container {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+h1 {
+	text-align: center;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+    
+}
+body{
+    background-image: url('https://images.unsplash.com/photo-1615715757401-f30e7b27b912?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+}
+
+label {
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+input[type="text"], textarea, input[type="date"] {
+	padding: 10px;
+	margin-top: 5px;
+	margin-bottom: 15px;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#submit-btn {
+	background-color: #4CAF50;
+	color: white;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#submit-btn:hover {
+	background-color: #3e8e41;
+}
+
+.error {
+	color: red;
+	margin-top: 5px;
+}

@@ -1,0 +1,71 @@
+
+.forms-out {
+    margin: 0 auto;
+    font-family: "Fira Sans", sans-serif;
+    padding: 15px 0;
+}
+
+body {
+    background-image: url('https://images.wallpaperscraft.com/image/single/stars_space_galaxy_117958_2048x1152.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+.forms-in {
+    width: 93%;
+    margin: 0 auto;
+    color: rgb(32, 30, 30);
+    padding: 15px 0;
+}
+
+.forms-in div {
+    padding: 30px 20px;
+    max-width: 350px;
+    margin: 0 auto;
+    background: #89a1d6;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.forms-in h3 {
+    text-align: center;
+}
+
+.forms-in input {
+    border: none;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.forms-in button {
+    border: none;
+    padding: 7px 20px;
+    background: #efe9e9;
+    color: #131515;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.forms-in button:hover {
+    opacity: 0.7;
+}
+
+.hide {
+    display: none;
+}
+
+#forgot-password {
+    text-align: center;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+#forgot-password:hover {
+    opacity: 0.7;
+}
