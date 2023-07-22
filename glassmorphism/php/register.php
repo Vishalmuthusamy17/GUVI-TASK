@@ -46,21 +46,3 @@ header("location../index.html");
 
 
 ?>
-<?php
-include('db_connection.php');
-
-if($_SERVER["REQUEST_METHOD"] == "POST") {
-    $username = mysqli_real_escape_string($conn,$_POST['username']);
-    $password = mysqli_real_escape_string($conn,$_POST['password']); 
-
-    $sql = "INSERT INTO users (username, password) VALUES ('$username', '$password')";
-    mysqli_query($conn,$sql);
-    header("location: login.php");
-}
-?>
-
-<form action="" method="post">
-    <input type="text" name="username">
-    <input type="password" name="password">
-    <input type="submit" value="Register">
-</form>
