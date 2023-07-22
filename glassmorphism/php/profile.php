@@ -21,24 +21,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 ?>
 
 
-<?php
-session_start();
-include('db_connection.php');
-
-if($_SERVER["REQUEST_METHOD"] == "POST") {
-    $username = $_SESSION['login_user'];
-    $name = mysqli_real_escape_string($conn,$_POST['name']);
-    $email = mysqli_real_escape_string($conn,$_POST['email']); 
-
-    $sql = "UPDATE users SET name = '$name', email = '$email' WHERE username = '$username'";
-    mysqli_query($conn,$sql);
-    header("location: profile.php");
-}
-?>
-
-<form action="" method="post">
-    <input type="text" name="name">
-    <input type="email" name="email">
-    <input type="submit" value="Update">
-</form>
 
